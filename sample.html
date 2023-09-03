@@ -1,0 +1,35 @@
+<html>
+
+<head>
+
+<style>
+#res{color:blue,
+	font-size:10px;
+}
+</style>
+<script>
+function age(){
+	if(document.getElementById("textbox1").value>=18){
+	<!--	window.alert("Eligible for voting") -->
+		document.getElementById("displaytext").innerHTML="Eligible for voting"
+	
+	}
+	
+	else{
+			document.getElementById("displaytext").innerHTML="Not Eligible for voting"
+
+	}
+}
+</script>
+
+</head>
+
+<body>
+<h1>Enter your Age:<input type="text" id="textbox1"><br></h1>
+
+<button type="button" onclick="age()">VERIFY</button><br>
+<div id="displaytext"></div>
+
+</body>
+
+</html>
